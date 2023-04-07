@@ -1,0 +1,17 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 50,
+    "max": 50
+  },
+  "mongodb": "mongodb://root:rootpassword@localhost:27017/contactsdb?authSource=admin",
+  "minio": {
+    "accessKey": "",
+    "secretKey": "",
+    "endPoint": "localhost",
+    "port": "9000",
+    "bucket": "dummy"
+  }
+}

@@ -1,0 +1,3 @@
+{
+    "mongodb": "mongodb://idontexist.mongo.com:1234/dummydb"
+}
