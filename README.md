@@ -33,7 +33,26 @@ Getting up and running is as easy as 1, 2, 3.
 
 ## Testing
 
+Create read only user in mongoDB. SSH into the mongoDB container and run:
+```
+mongosh -u root
+
+use admin; // Make sure we go to the admin database 
+
+// Create user and read access only to DB. 
+db.createUser({ 
+  user: "readuser", 
+  pwd: "userpassword",
+  roles: [ { role: "read", db: "contactsdb" } ] 
+});
+
+// Check that user created
+db.getUsers()
+```
+
 Simply run `npm test` and all your tests in the `test/` directory will be run.
+
+
 
 ## Scaffolding
 

@@ -24,7 +24,8 @@
     "yarn": ">= 0.18.0"
   },
   "scripts": {
-    "test": "npm run lint && export NODE_ENV=test && npm run mocha",
+    "test-lint": "npm run lint && export NODE_ENV=test && npm run mocha",
+    "test": "export NODE_ENV=test && npm run mocha",
     "lint": "eslint src/. test/. --config .eslintrc.json --fix",
     "dev": "nodemon src/",
     "start": "node src/",
